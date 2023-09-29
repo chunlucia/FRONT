@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/usuario.css">
+    <title>Mi Perfil</title>
+</head>
+
+<body>
+
+    <!-- Campos de edición de datos de usuario -->
+    <div class="profile-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="text" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+        <label for="email">Correo:</label>
+        <input type="text" id="email" value="usuario@example.com" required>
+
+        <label for="nombre_usuario">Nombre de Usuario:</label>
+        <input type="text" id="nombre_usuario" value="nombre_usuario" required>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="text" id="contrasena" name="contrasena" required>
+
+
+        <!-- Opción para cargar una foto -->
+        <input type="file" id="fileInput" accept="image/*">
+        <div id="preview"></div>
+
+        <!-- Opción para seleccionar una foto predefinida -->
+
+        <div id="defaultPhotos">
+        
+        </div>
+
+        <div>
+            <img src="../images/perfil/cangrejo.png" alt="Cangrejo" class="defaultPhoto">
+            <img src="../images/perfil/estrella-de-mar.png" alt="Estrella de Mar" class="defaultPhoto">
+            <img src="../images/perfil/gato.png" alt="Gato" class="defaultPhoto">
+            <img src="../images/perfil/leon.png" alt="León" class="defaultPhoto">
+            <img src="../images/perfil/mariposa.png" alt="Mariposa" class="defaultPhoto">
+            <img src="../images/perfil/medusa.png" alt="Medusa" class="defaultPhoto">
+            <img src="../images/perfil/perro.png" alt="Perro" class="defaultPhoto">
+            <img src="../images/perfil/pinguino.png" alt="Pinguino" class="defaultPhoto">
+            <img src="../images/perfil/vaca.png" alt="Vaca" class="defaultPhoto">
+            <img src="../images/perfil/tucan.png" alt="Tucán" class="defaultPhoto">
+        </div>
+
+        <!-- Botón para guardar los cambios -->
+        <button id="saveButton">Guardar Cambios</button>
+
+    
+    </div>
+
+
+    <div class="background-image"></div>
+
+
+    <script src="usuario.js"></script>
+
+
+</body>
+
+</html>

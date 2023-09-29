@@ -1,0 +1,29 @@
+function Load_Canal(id_servidores) {
+    fetch('https://qxpfgbqw-5000.brs.devtunnels.ms/channels/?server_id=${id_servidores}', {  //ejemplo
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin':
+        },
+        credentials: 'incluide'
+    })
+    
+        .then(response => response.json())
+        .then(canales => {
+            const canalListContainer = document.getElementById("canalListContainer");
+
+            canalListContainer.innerHTML = "";
+
+            if (canales.length === 0) {
+                canalListContainer.innerHTML = "No perteneces a ningún servidor";
+            } else {
+                canales.forEach(canal => {
+                    const canalContainer = document.createElement("div");
+                    canalContainer.classList.add("canal-container");
+
+                    const canalNombre = document.createElement("div");
+                    canalContainer.classList.add("canal-container");
+                })
+            }
+    })
+}
